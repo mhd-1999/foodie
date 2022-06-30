@@ -1,0 +1,16 @@
+header {
+    background-color: rgba(255, 255, 255, 0.0) !important;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    padding:0 70px;
+    color: white;
+    z-index: 99;
+}
+.logo{
+    padding: 16px !important;
+    height: 100%;
+}
+ul li{
+    padding:16px;
+}

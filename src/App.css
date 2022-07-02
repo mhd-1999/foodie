@@ -1,16 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Italianno&family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
+:root{
+  --font:'Poppins', sans-serif;
+  --fontS:'Italianno', cursive;
+  --fontT:'Montserrat', sans-serif;
+  --fontM: 'Cormorant Garamond', serif;
+}
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-rendering: optimizeSpeed;
+}
+html{
+  scroll-behavior: smooth;
 }
 .d-flex{
   display: flex;
 }
-body{
-  height: 3000px;
-}
+
 img{
   width: 100%;
+  display: block;
 }
 ul li{
   list-style: none;
@@ -23,4 +33,21 @@ ul li{
 }
 .d{
   display: none;
+}
+.activeW{
+  display: block !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  left: 0!important;
+  background-color: white;
+  position: absolute;
+  transition: all 1s linear infinite;
+}
+.activeBtn span,.activeBtn:before,.activeBtn:after{
+  content: "";
+  position: absolute;
+  top: calc(50%-1px);
+  width: 40%;
+  border-bottom: 2px solid black !important;
+  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }

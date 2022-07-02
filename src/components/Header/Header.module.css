@@ -3,14 +3,94 @@ header {
     justify-content: space-between;
     width: 100%;
     position: fixed;
-    padding:0 70px;
+    padding: 0 70px;
     color: white;
     z-index: 99;
 }
-.logo{
+
+.logo {
     padding: 16px !important;
     height: 100%;
 }
-ul li{
-    padding:16px;
+
+ul li {
+    padding: 16px;
 }
+.navM{
+    display: none;
+}
+.menuBtn{
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top:40px;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s ease-in-out;
+    
+}
+.menuBtn span,.menuBtn:before,.menuBtn:after{
+    content: "";
+    position: absolute;
+    top: calc(50%-1px);
+    width: 40%;
+    border-bottom: 2px solid white;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.menuBtn:before{
+    transform: translateY(-8px);
+}
+.menuBtn:after{
+    transform: translateY(8px);
+}
+.close{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: background .6s;
+}
+input[type=checkbox]:checked + .menuBtn span{
+    transform: scale(0);
+}
+input[type=checkbox]:checked + .menuBtn:before{
+    transform: rotate(45deg);
+    border-color: white;
+}
+input[type=checkbox]:checked + .menuBtn:after {
+	transform: rotate(-45deg);
+  border-color: white;
+}
+.navM .menu ul{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+.navM .menu ul li{
+    height: 10%;
+    margin: 15px 0;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.navM .menu{
+    display: none;
+    left: -1500;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    transform: translateX(-300);
+}
+
+@media screen and (max-width:768px){
+    .navM{
+        display: block !important;
+    }
+    .nav{
+        display: none !important;
+    }
+}
+

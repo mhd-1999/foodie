@@ -1,0 +1,78 @@
+.wrapper{
+    background-image: url(//cdn.jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/Always-fresh2.jpg);
+    padding: 120px 0 120px 0;
+    position: relative;
+    margin: auto;
+    background-size: cover;
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+.wrapper .title{
+    text-align: center;
+}
+.wrapper .title h1{
+    font-family: var(--font);
+    letter-spacing: 4px;
+}
+.wrapper .title .titleS{
+    max-width: 280px;
+    position: relative;
+    font-size: 1rem;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.wrapper .title span{
+    color: #a6a6a6;
+    padding: 10px;
+}
+.wrapper .title .titleS:before{
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: "";
+    background-color: #e5e5e5;
+    margin-left: -50%;
+    text-align: right;
+}
+.wrapper .title .titleS:after{
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: "";
+    background-color: #e5e5e5;
+}
+.wrapper .content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper .content .contentItem{
+    padding: 45px;
+    text-align: center;
+    margin-top: 60px;
+}
+.wrapper .content .contentItem img,h3,p{
+    margin-bottom: 30px;
+}
+.wrapper .content .contentItem h3{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: var(--font);
+}
+.wrapper .content .contentItem span{
+    font-weight: 700;
+}
+.wrapper .content .contentItem p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #646464;
+    font-family:var(--fontT);
+}

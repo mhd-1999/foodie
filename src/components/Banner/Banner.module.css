@@ -36,3 +36,8 @@
     text-transform: none;
     font-size: 10rem;
 }
+@media screen and (max-width:768px){
+    .banner .content{
+        padding: 200px 0 !important;
+    }
+}

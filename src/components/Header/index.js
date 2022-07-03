@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import styles from "./Header.module.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 const lists = [
   {
     id: 1,
@@ -63,38 +63,20 @@ function Header() {
   };
   console.log(isButton);
   return (
-    <header className={clsx(styles.container, "d-flex", { activeH: isShrunk })}>
-      <div className={clsx(styles.logo, { d: isShrunk })}>
-        <img
-          src="//jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/logo.png"
-          alt=""
-        />
-      </div>
-      <div className={clsx(styles.logo, { d: !isShrunk })}>
-        <img src="//jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/C-_Users_Kolberga_Desktop_logo_dark.png"></img>
-      </div>
-
-      <div className={clsx(styles.nav)}>
-        <ul className="d-flex">
-          {lists.map((list) => (
-            <li key={list.id} className={clsx(`${list.name}`)}>
-              {list.name}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className={clsx(styles.navM)}>
-        <div className={clsx(styles.btn)}>
-          <input onClick={handleClick} type="checkbox" id="active" />
-          <label
-            for="active"
-            className={clsx(styles.menuBtn, { activeBtn: isShrunk })}
-          >
-            <span></span>
-          </label>
+    <header>
+      <div className={clsx(styles.header, "d-flex", { activeH: isShrunk })}>
+        <div className={clsx(styles.logo, { d: isShrunk })}>
+          <img
+            src="//jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/logo.png"
+            alt=""
+          />
         </div>
-        <div className={clsx(styles.menu, { activeW: isButton })}>
-          <ul>
+        <div className={clsx(styles.logo, { d: !isShrunk })}>
+          <img src="//jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/C-_Users_Kolberga_Desktop_logo_dark.png"></img>
+        </div>
+
+        <div className={clsx(styles.nav)}>
+          <ul className="d-flex">
             {lists.map((list) => (
               <li key={list.id} className={clsx(`${list.name}`)}>
                 {list.name}
@@ -102,7 +84,28 @@ function Header() {
             ))}
           </ul>
         </div>
+        <div className={clsx(styles.navM)}>
+          <div className={clsx(styles.btn)}>
+            <input onClick={handleClick} type="checkbox" id="active" />
+            <label
+              for="active"
+              className={clsx(styles.menuBtn, { activeBtn: isShrunk })}
+            >
+              <span></span>
+            </label>
+          </div>
+          <div className={clsx(styles.menu, { activeW: isButton }, { activeH: isShrunk })}>
+            <ul>
+              {lists.map((list) => (
+                <li key={list.id} className={clsx(`${list.name}`)}>
+                  {list.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
+
     </header>
   );
 }

@@ -55,6 +55,7 @@
 }
 .content .contentItem img{
     margin-bottom: 25px;
+    border-radius: 17px;
 }
 .content .contentItem h3{
     font-size: 18px;
@@ -72,4 +73,15 @@
 .content .contentItem p{
     color: #a6a6a6;
     font-family: var(--fontT);
+}
+@media screen and (max-width:1024px) {
+    .content{
+        flex-wrap: wrap;
+    }
+    .content .contentItem{
+        padding: 30px 90px;
+    }
+    .content .contentItem img{
+        border-radius: 50px;
+    }
 }

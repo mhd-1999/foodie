@@ -53,6 +53,7 @@ img{
 .wrapper .content{
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: nowrap;
 }
 .wrapper .content .contentItem{
     padding: 45px;
@@ -75,4 +76,11 @@ img{
     font-weight: 500;
     color: #646464;
     font-family:var(--fontT);
+}
+@media screen and (max-width:768px){
+    .wrapper .content{
+        max-width: 600px;
+        flex-wrap: wrap !important;
+        padding: 0 70px;
+    }
 }

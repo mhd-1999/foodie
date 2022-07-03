@@ -28,20 +28,14 @@ ul li{
 }
 .activeH{
   background-color: white !important;
-  color: black;
+  color: black !important;
   transition: 1s;
 }
 .d{
   display: none;
 }
 .activeW{
-  display: block !important;
-  width: 100vw !important;
-  height: 100vh !important;
-  left: 0!important;
-  background-color: white;
-  position: absolute;
-  transition: all 1s linear infinite;
+  right: 0 !important;
 }
 .activeBtn span,.activeBtn:before,.activeBtn:after{
   content: "";
@@ -50,4 +44,12 @@ ul li{
   width: 40%;
   border-bottom: 2px solid black !important;
   transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.carousel-indicators{
+  display: none !important;
+  opacity: 0 !important;
+}
+.carousel-control-prev,.carousel-control-next{
+  display: none !important;
+  opacity: 0 !important;
 }

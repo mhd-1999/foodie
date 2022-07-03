@@ -1,5 +1,8 @@
 import clsx from "clsx";
+import { useState } from "react";
+import { Carousel } from "react-bootstrap";
 import styles from "./Menu.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 const foods = [{
     id: 1,
     name: "Proin gravida gravida",
@@ -16,7 +19,26 @@ const foods = [{
     price: "$10.50",
     dis: "Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan vitae, dapibus et."
 }]
+const fadeImgs = [{
+    id: 1,
+    url: "//cdn.jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/andrew-dong-387384.png",
+    dis: "Aenean consectetur lacinia diam a tincidunt. Vivamus facilisis lacus non velit suscipit pellentesque. Nam ac mauris nec mi lobortis sollicitudin sed at lacus. Fusce volutpat, dolor in suscipit pharetra, lacus sapien sollicitudin quam, non aliquam ex neque eu lectus.",
+    name: "Katey Gallardo",
+    lvl: "Proud client / CEO ",
+
+}, {
+    id: 2,
+    url: "//cdn.jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/03/matheus-ferrero-288182-unsplash2.png",
+    dis: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent in velit vehicula, iaculis tortor eu, placerat elit. Aenean iaculis nulla nec condimentum pulvinar.",
+    name: "Brandon",
+    lvl: "Wolf"
+}
+]
 function Menu() {
+    const [index, setIndex] = useState(0);
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex)
+    }
     return <div className={clsx(styles.wrapper)}>
         <div className={clsx(styles.imgTop)}>
         </div>
@@ -67,6 +89,24 @@ function Menu() {
                 <h1>Our Team</h1>
                 <div className={clsx(styles.titleS)}>
                     <span>is the best</span>
+                </div>
+            </div>
+            <div className={clsx(styles.contentC)}>
+                <div>
+                    <Carousel fade activeIndex={index} onSelect={handleSelect}>
+                        {fadeImgs.map(fadeImg => (
+                            <Carousel.Item >
+                                <div className={clsx(styles.img)}>
+                                    <img src={fadeImg.url} alt="" />
+                                </div>
+                                <div className={clsx(styles.text)}>
+                                    <p>{fadeImg.dis}</p>
+                                    <h3>{fadeImg.name}</h3>
+                                    <h4>{fadeImg.lvl}</h4>
+                                </div>
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@
     background: url(//cdn.jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/Layer-0-copy-3.png);
     margin: 200px 0 500px 0 ;
     height: 100vh;
-    background-size: auto;
+    background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
     position: relative;
@@ -22,10 +22,9 @@
 }
 .wrapper  .menu{
     width: 70%;
-    height: auto;
     background-color: white;
     position: absolute;
-    top: 10%;
+    top: 50px;
     left: 50%;
     transform: translate(-50%,10%);
     text-align: center;
@@ -127,5 +126,65 @@
     width: 100%;
     z-index: 1;
     background: #f9f9f9;
-    padding-top: 150px;
+    padding: 150px 0;
+}
+.customer .contentC .img{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+.contentC .text {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.contentC .text p{
+    color: #a6a6a6;
+}
+.contentC .text h3{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: var(--fontT);
+    margin-top: 20px;
+}
+.contentC .text h4{
+    font-size: 15px;
+    font-family: var(--fontM);
+}
+@media screen and (max-width:1024px) {
+    .wrapper .menu{
+        width: 90%;
+        padding: 70px !important;
+        top: -50px;
+    }
+    .menu{
+        padding: 15px !important;
+    }
+    .title{
+        padding: 30px 100px;
+        height: 200px;
+    }
+    .content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content h3{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .content .contentItem{
+        margin-bottom: 30px;
+    }
+    .content .contentItem .top{
+        display: block !important;
+    }
+    .content .contentItem .top p{
+        line-height: 10px;
+    }
+    .content .contentItem .bot{
+        text-align: center;
+        width: 100%;
+    }
 }

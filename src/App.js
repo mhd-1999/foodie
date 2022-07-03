@@ -6,6 +6,7 @@ import About from './components/About';
 import Welcome from './components/Welcome';
 import OurTeam from './components/OurTeam';
 import Menu from './components/Menu';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Welcome />
       <OurTeam />
       <Menu />
+      <Contact />
     </div>
   );
 }

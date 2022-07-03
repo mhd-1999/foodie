@@ -2,7 +2,8 @@
     background-image: url('https://img.freepik.com/free-photo/figs-spices-with-cup-drink-blue_114579-29075.jpg?t=st=1656751884~exp=1656752484~hmac=795661707cdc6f427aeab5dec1ca59cdee94c76e41bb58b9e5dd6ebcb7f9571f&w=1380');
     position: relative;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment:scroll;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
 }

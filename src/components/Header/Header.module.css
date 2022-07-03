@@ -1,7 +1,7 @@
 .header {
     background-color: rgba(255, 255, 255, 0.0) ;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     padding: 0 70px;
     color: white;
@@ -95,6 +95,13 @@ input[type="checkbox"]{
         padding: 16px 0 !important;
     }
 }
-
+@media screen and (max-width:425px){
+    .header{
+        padding: 10px;
+    }
+    .menuBtn{
+        right: 10px;
+    }
+}
 
 

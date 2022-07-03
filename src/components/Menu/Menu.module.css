@@ -124,13 +124,14 @@
     color: black;
 }
 .customer{
-    position: absolute;
+    position: relative;
     text-align: center;
     top: 90%;
     width: 100%;
     z-index: 1;
     background: #f9f9f9;
     padding: 50px 0;
+    margin-top: -250px;
 }
 .customer .contentC .img{
     width: 70px;
@@ -202,5 +203,8 @@
     }
     .customer{
         position: sticky;
+    }
+    .customer .contentC .text{
+        width: 80%;
     }
 }

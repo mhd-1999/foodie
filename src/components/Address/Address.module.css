@@ -1,0 +1,66 @@
+.wrapper .contentLeft .title{
+    font-size: 30px;
+    font-family: var(--fontM);
+    padding-bottom: 40px;
+}
+.contentLeft{
+    width: 100%;
+    padding: 140px 0;
+    justify-content: center;
+    flex: 50%;
+    text-align: center;
+    height: 100vh;
+}
+.contentLeft .content{
+    max-width: 320px;
+    margin:0 auto;
+}
+.contentLeft .content .top{
+    padding-bottom: 100px;
+}
+.contentLeft .content .top .item{
+    justify-content: space-between;
+    border-bottom: 1px dashed #e6e6e6;
+    padding-top: 16px;
+}
+.top .item p:nth-child(1){
+    font-family: var(--fontM);
+    color: black;
+    font-weight: bold;
+}
+.top .item p:nth-child(2){
+    font-family: var(--fontT);
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.bot .item p{
+    width: 100%;
+    flex: 100%;
+    font-family: var(--font);
+}
+.bot .item p:nth-child(1){
+    font-weight: bold;
+}
+.contentRight{
+    flex: 50%;
+    height: 100vh;
+}
+.contentRight iframe{
+    height: 100%;
+    
+    width: 100%;
+    
+}
+@media screen and (max-width:768px){
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .contentLeft,.contentRight{
+        width: 100%;
+        flex: 100% ;
+    }
+    .contentRight{
+        height: 290px;
+    }
+}

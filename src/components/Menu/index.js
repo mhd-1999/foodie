@@ -22,7 +22,7 @@ const foods = [{
 const fadeImgs = [{
     id: 1,
     url: "//cdn.jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/andrew-dong-387384.png",
-    dis: "Aenean consectetur lacinia diam a tincidunt. Vivamus facilisis lacus non velit suscipit pellentesque. Nam ac mauris nec mi lobortis sollicitudin sed at lacus. Fusce volutpat, dolor in suscipit pharetra, lacus sapien sollicitudin quam, non aliquam ex neque eu lectus.",
+    dis: "Aenean consectetur lacinia diam a tincidunt. Vivamus facilisis lacus non velit suscipit pellentesque. Nam ac mauris nec mi lobortis sollicitudin sed at lacus. Fusce volutpat, dolor in suscipit pharetra.",
     name: "Katey Gallardo",
     lvl: "Proud client / CEO ",
 

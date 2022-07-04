@@ -5,27 +5,33 @@ const lists = [
   {
     id: 1,
     name: "Home",
+    position: "1000"
   },
   {
     id: 2,
     name: "About us",
+    position: "1200"
   },
   {
     id: 3,
     name: "Menu",
+    position: "1300"
   },
   {
     id: 4,
     name: "Reservation",
+    position: "1400"
   },
   {
     id: 5,
     name: "Contacts",
+    position: "1500"
   },
 ];
 function Header() {
   const [isShrunk, setShrunk] = useState(false);
   const [isButton, setButton] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {

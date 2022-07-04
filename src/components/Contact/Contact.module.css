@@ -6,8 +6,8 @@
     background-size: cover;
 }
 .wrapper .group{
-    max-width: 1200px;
-    width: 100%;
+    
+    width: 70%;
     margin: 0 auto;
     background-color: white;
     border-radius: 17px;
@@ -98,6 +98,7 @@
     font-family: var(--fontM);
     letter-spacing: 2px;
 }
+
 form{
     width: 100%;
 }
@@ -116,4 +117,19 @@ button{
     font-size: 17px;
     text-transform: uppercase;
     padding-top: 30px;
+}
+@media screen and (max-width:768px){
+    .wrapper .group{
+        width: 90%;
+        padding: 50px 10px;
+    }
+    .wrapper .input .item{
+        width: 100%;
+        flex: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+    .wrapper .title .titleS{
+        width: 60%;
+    }
 }

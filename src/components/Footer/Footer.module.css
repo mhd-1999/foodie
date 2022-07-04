@@ -1,0 +1,42 @@
+footer{
+    background-color: #393939;
+    color: white;
+    padding: 50px 0 30px;
+    justify-content: space-around;
+}
+
+footer .icon a{
+    color: white;
+    text-align: center;
+    line-height: 3;
+}
+footer .icon a:hover{
+    color: orange;
+    transition: all 1s linear ;
+}
+footer .icon a:nth-child(2){
+    padding: 0 50px;
+}
+footer .name{
+    text-align: center;
+    line-height: 3;
+    font-family: var(--font);
+    letter-spacing: 2px;
+}
+footer .name span{
+    font-weight: bold;
+}
+@media screen and (max-width:768px) {
+    footer{
+        flex-wrap: wrap;
+    }
+    footer .logo,.name,.icon{
+        flex: 100%;
+    }
+    footer .logo{
+        max-width: 128px;
+    }
+    footer .icon{
+        justify-content: center;
+    }
+}

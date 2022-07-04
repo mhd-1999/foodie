@@ -1,7 +1,5 @@
 import clsx from "clsx";
 import styles from "./Contact.module.css";
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css'
 import { useState } from "react";
 import { Select } from "@mui/material";
 import FormInput from "../FormInput";
@@ -46,6 +44,7 @@ const items = [{
     pattern: "[0-9]{3}-[0-9]{2}-[0-9]{3}",
     required: true,
 }]
+
 const optionList = [
     {
         value: "09:00",
@@ -122,13 +121,13 @@ const optionList = [
 
 ]
 function Contact() {
-    const [selectedDate, setSelectedDate] = useState(null)
-    const [firstName, setFirstName] = useState("")
-    const [secondName, setSecondName] = useState("")
-    const [phoneNumber, setPhoneNumber] = useState("")
-    const [email, setEmail] = useState("")
-    const [selected, setSelected] = useState()
-    const [message, setMessage] = useState("")
+    // const [selectedDate, setSelectedDate] = useState(null)
+    // const [firstName, setFirstName] = useState("")
+    // const [secondName, setSecondName] = useState("")
+    // const [phoneNumber, setPhoneNumber] = useState("")
+    // const [email, setEmail] = useState("")
+    // const [selected, setSelected] = useState()
+    // const [message, setMessage] = useState("")
     const [values, setValues] = useState({
         firstname: "",
         lastname: "",
@@ -143,16 +142,8 @@ function Contact() {
 
     }
 
-
-    console.log(message);
     const onChange = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value })
-        if (values.firstname == "") {
-            console.log("firstname");
-        }
-        else {
-            console.log("firstname not null");
-        }
     }
     console.log(values);
     return <div className={clsx(styles.wrapper)}>

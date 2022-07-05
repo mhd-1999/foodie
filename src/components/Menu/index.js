@@ -55,8 +55,8 @@ function Menu() {
             <div className={clsx(styles.content, 'd-flex')}>
                 <div className={clsx(styles.contentL)}>
                     <h3 className={clsx(styles.cat)}>Starters</h3>
-                    {foods.map(food => (
-                        <div className={clsx(styles.contentItem)} key={food.id}>
+                    {foods.map((food, idx) => (
+                        <div className={clsx(styles.contentItem)} key={idx}>
                             <div className={clsx(styles.top, 'd-flex')}>
                                 <p>{food.name}</p>
                                 <p>{food.price}</p>
@@ -69,8 +69,8 @@ function Menu() {
                 </div>
                 <div className={clsx(styles.contentR)}>
                     <h3 className={clsx(styles.cat)}>Mains</h3>
-                    {foods.map(food => (
-                        <div className={clsx(styles.contentItem)} key={food.id}>
+                    {foods.map((food, idx) => (
+                        <div className={clsx(styles.contentItem)} key={idx}>
                             <div className={clsx(styles.top, 'd-flex')}>
                                 <p>{food.name}</p>
                                 <p>{food.price}</p>
@@ -94,8 +94,8 @@ function Menu() {
             <div className={clsx(styles.contentC)}>
                 <div>
                     <Carousel fade activeIndex={index} onSelect={handleSelect}>
-                        {fadeImgs.map(fadeImg => (
-                            <Carousel.Item >
+                        {fadeImgs.map((fadeImg, idx) => (
+                            <Carousel.Item key={idx}>
                                 <div className={clsx(styles.img)}>
                                     <img src={fadeImg.url} alt="" />
                                 </div>

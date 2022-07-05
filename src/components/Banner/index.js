@@ -11,16 +11,18 @@ function Banner() {
         <p>Premium</p>
         <p>Quality</p>
         <h1>Restaurant </h1>
-        <h1>& Dishes</h1>
+        <h2>& Dishes</h2>
     </div>
-        <div className={clsx(styles.scrollDown)}>
-            <div className={clsx(styles.mouse)}>
-                <span></span>
+        <a href='#About us'>
+            <div className={clsx(styles.scrollDown)}>
+                <div className={clsx(styles.mouse)}>
+                    <span></span>
+                </div>
+                <div className={clsx(styles.arrow)}>
+                    <span></span>
+                </div>
             </div>
-            <div className={clsx(styles.arrow)}>
-                <span></span>
-            </div>
-        </div>
+        </a>
     </div>;
 }
 

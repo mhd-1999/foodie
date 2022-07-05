@@ -40,7 +40,7 @@ function ButtonTop() {
         {showButtonTop && (
             <div style={buttonStyle}
                 onClick={handleScrollTop}
-            ><i style={iconStyle} class="fas fa-angle-up"></i></div>
+            ><i style={iconStyle} className="fas fa-angle-up"></i></div>
         )}
     </div>;
 }

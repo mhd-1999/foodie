@@ -73,7 +73,6 @@ function Header() {
   //     behavior: "smooth"
   //   })
   // }
-  console.log(isButton);
   return (
     <header>
       <div className={clsx(styles.header, "d-flex", { activeH: isShrunk })}>
@@ -100,7 +99,7 @@ function Header() {
           <div className={clsx(styles.btn)}>
             <input onClick={handleClick} type="checkbox" id="active" />
             <label
-              for="active"
+              htmlFor="active"
               className={clsx(styles.menuBtn, { activeBtn: isShrunk })}
             >
               <span></span>

@@ -39,7 +39,7 @@ function Address() {
             <div className={clsx(styles.content)}>
                 <div className={clsx(styles.top)}>
                     {infors.map(infor => (
-                        <div className={clsx(styles.item, 'd-flex')}>
+                        <div className={clsx(styles.item, 'd-flex')} key={infor.id}>
                             <p>{infor.left}</p>
                             <p>{infor.right}</p>
                         </div>
@@ -47,7 +47,7 @@ function Address() {
                 </div>
                 <div className={clsx(styles.bot)}>
                     {adds.map(add => (
-                        <div className={clsx(styles.item, 'd-flex', 'flex-wrap')}>
+                        <div className={clsx(styles.item, 'd-flex', 'flex-wrap')} key={add.id}>
                             <p>{add.add}</p>
                             <p>{add.name}</p>
                         </div>

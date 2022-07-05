@@ -1,10 +1,7 @@
 import clsx from "clsx";
 import styles from "./Contact.module.css";
 import { useState } from "react";
-import { Select } from "@mui/material";
 import FormInput from "../FormInput";
-import { useRef } from "react";
-import { useEffect } from "react";
 const items = [{
     id: 1,
     placeholder: "First Name*",
@@ -135,17 +132,14 @@ function Contact() {
         phone: "",
         date: "",
     })
-
     const handleSubmit = (e) => {
         e.preventDefault();
         const data = new FormData(e.target);
-
     }
 
     const onChange = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value })
     }
-    console.log(values);
     return <div className={clsx(styles.wrapper)} id="Reservation">
         <div className={clsx(styles.group)}>
             <div className={clsx(styles.groupInput)}>

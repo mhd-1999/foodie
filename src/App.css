@@ -1,4 +1,4 @@
-@import url("https://cdn.syncfusion.com/ej2/material.css");
+/* @import url("https://cdn.syncfusion.com/ej2/material.css");
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Italianno&family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
 :root{
   --font:'Poppins', sans-serif;
@@ -34,6 +34,9 @@ ul li{
   color: black !important;
   transition: 1s;
 }
+.activeH a{
+  color: black;
+}
 .d{
   display: none;
 }
@@ -55,4 +58,4 @@ ul li{
 .carousel-control-prev,.carousel-control-next{
   display: none !important;
   opacity: 0 !important;
-}
+} */

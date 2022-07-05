@@ -19,6 +19,15 @@
 ul li {
     padding: 16px;
 }
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+ul li a:hover{
+    color:orange;
+    transition: all 1 ease;
+}
 .navM{
     display: none;
 }
@@ -75,7 +84,7 @@ input[type=checkbox]:checked + .menuBtn:after {
     letter-spacing: 3px;
 }
 .menu ul{
-    padding: 200px 0;
+    padding: 100px 0;
     text-align: center;
     height: auto;
 }
@@ -103,7 +112,8 @@ input[type="checkbox"]{
         padding: 10px;
     }
     .menuBtn{
-        right: 10px;
+        right: 30px;
+        top: 50px;
     }
 }
 

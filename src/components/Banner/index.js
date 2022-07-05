@@ -7,7 +7,7 @@ function Banner() {
         let offset = window.pageYOffset;
         bannerRef.current.style.backgroundPositionY = offset * 0.7 + 'px';
     })
-    return <div ref={bannerRef} className={clsx(styles.banner)}><div className={clsx(styles.content)}>
+    return <div ref={bannerRef} className={clsx(styles.banner)} id="Home"><div className={clsx(styles.content)}>
         <p>Premium</p>
         <p>Quality</p>
         <h1>Restaurant </h1>

@@ -39,7 +39,7 @@ function Menu() {
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex)
     }
-    return <div className={clsx(styles.wrapper)}>
+    return <div className={clsx(styles.wrapper)} id="Menu">
         <div className={clsx(styles.imgTop)}>
         </div>
         <div className={clsx(styles.imgBot)}>

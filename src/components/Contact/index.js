@@ -146,13 +146,13 @@ function Contact() {
         setValues({ ...values, [e.target.name]: e.target.value })
     }
     console.log(values);
-    return <div className={clsx(styles.wrapper)}>
+    return <div className={clsx(styles.wrapper)} id="Reservation">
         <div className={clsx(styles.group)}>
             <div className={clsx(styles.groupInput)}>
                 <div className={clsx(styles.title)}>
-                    <h1>Our Team</h1>
+                    <h1>Select a Date & Book Now</h1>
                     <div className={clsx(styles.titleS)}>
-                        <span>is the best</span>
+                        <span>Let's check</span>
                     </div>
                 </div>
                 <form onSubmit={handleSubmit}  >

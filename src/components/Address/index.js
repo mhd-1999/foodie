@@ -30,7 +30,7 @@ const adds = [{
     name: "+1 844 295 0715"
 }]
 function Address() {
-    return <div className={clsx(styles.wrapper, 'd-flex')}>
+    return <div className={clsx(styles.wrapper, 'd-flex')} id="Contacts">
         <div className={clsx(styles.contentLeft)}>
             <div className={clsx(styles.title)}>
                 <p>How to Find</p>

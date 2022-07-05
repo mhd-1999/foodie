@@ -24,7 +24,7 @@ const cats = [{
 }
 ]
 function About() {
-    return <div className={clsx(styles.wrapper)}>
+    return <div className={clsx(styles.wrapper)} id="About us">
         <div className={clsx(styles.title)}>
             <h1>What we can offer</h1>
             <div className={clsx(styles.titleS)}>

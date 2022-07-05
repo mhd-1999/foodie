@@ -35,7 +35,7 @@ ul li a:hover{
     position: absolute;
     z-index: 2;
     right: 70px;
-    top:40px;
+    padding-top: 35px;
     height: 50px;
     width: 50px;
     transition: all 0.3s ease-in-out;
@@ -113,7 +113,6 @@ input[type="checkbox"]{
     }
     .menuBtn{
         right: 30px;
-        top: 50px;
     }
 }
 

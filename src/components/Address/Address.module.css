@@ -9,7 +9,7 @@
     justify-content: center;
     flex: 50%;
     text-align: center;
-    height: 100vh;
+    height: 100%;
 }
 .contentLeft .content{
     max-width: 320px;

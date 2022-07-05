@@ -67,6 +67,12 @@ function Header() {
       }
     });
   };
+  const handleClickPage = () => {
+    window.scrollTo({
+      top: 1000,
+      behavior: "smooth"
+    })
+  }
   console.log(isButton);
   return (
     <header>
@@ -84,10 +90,11 @@ function Header() {
         <div className={clsx(styles.nav)}>
           <ul className="d-flex">
             {lists.map((list) => (
-              <li key={list.id} className={clsx(`${list.name}`)}>
+              <li key={list.id} className={clsx(`${list.name}`)} onClick={handleClickPage}>
                 {list.name}
               </li>
             ))}
+
           </ul>
         </div>
         <div className={clsx(styles.navM)}>

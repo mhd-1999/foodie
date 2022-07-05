@@ -13,6 +13,14 @@ function Banner() {
         <h1>Restaurant </h1>
         <h1>& Dishes</h1>
     </div>
+        <div className={clsx(styles.scrollDown)}>
+            <div className={clsx(styles.mouse)}>
+                <span></span>
+            </div>
+            <div className={clsx(styles.arrow)}>
+                <span></span>
+            </div>
+        </div>
     </div>;
 }
 

@@ -96,6 +96,9 @@
     .banner .content h1{
         font-size: 70px;
     }
+    .banner .content h2{
+        font-size: 70px;
+    }
 }
 .scrollDown{
     position: absolute;

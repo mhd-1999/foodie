@@ -53,7 +53,7 @@ function About() {
                     id: `item-${idx + 1}`,
                     trigger: el,
                     start: 'top 100%',
-                    end: 'top 60%',
+                    end: 'top 70%',
 
                     toggleActions: 'play none reverse reverse'
                 },

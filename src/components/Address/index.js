@@ -52,10 +52,10 @@ function Address() {
             }
         })
         gsap.fromTo(rightRef.current, {
-            transform: 'translatey(100%)',
+            transform: 'translatex(100%)',
             opacity: 0
         }, {
-            transform: 'translatey(0%)',
+            transform: 'translatex(0%)',
             opacity: 1,
             duration: 2,
             ease: "slow",

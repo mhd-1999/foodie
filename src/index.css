@@ -28,6 +28,9 @@ code {
 html{
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 .d-flex{
   display: flex;
 }

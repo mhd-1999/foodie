@@ -68,7 +68,7 @@ function OurTeam() {
             }, {
                 duration: 4,
                 opacity: 1,
-                ease: 'slow',
+                ease: 'power2.out',
                 scrollTrigger: {
                     trigger: el,
                     start: 'top 60%',
